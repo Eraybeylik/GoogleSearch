@@ -1,0 +1,36 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+
+        <div class="search-box">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" placeholder="Google'da Ara">
+                <div class="button">
+                    <input type="submit" value="Google'da Ara">
+                    <input type="submit" value="Kendimi Şanslı Hissediyorum" onclick="luckySearch(event)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        function luckySearch(event) {
+            event.preventDefault();
+            window.location.href = "https://www.google.com/doodles";
+        }
+    </script>
+
+</body>
+</html>
